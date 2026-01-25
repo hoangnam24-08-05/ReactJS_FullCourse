@@ -1,0 +1,79 @@
+/* Reset cơ bản */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  /* Thay đổi quan trọng: Xếp theo chiều dọc */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo trục dọc */
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff; /* Màu nền tổng thể */
+}
+
+/* --- Style cho thanh Taskbar --- */
+.taskbar {
+  background-color: white;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center; /* Căn giữa các nút */
+  gap: 15px; /* Khoảng cách giữa các nút */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Bóng đổ nhẹ dưới thanh taskbar */
+  margin-bottom: 20px; /* Cách nội dung bên dưới 1 chút */
+}
+
+/* Style cho từng nút */
+.tab-btn {
+  padding: 10px 25px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  border-radius: 30px; /* Bo tròn nút */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+.tab-btn:hover {
+  background-color: #eef2f6;
+  border-color: #ccc;
+}
+
+/* Style cho nút đang được chọn (Active) */
+.tab-btn.active {
+  background-color: #007bff; /* Màu xanh nổi bật */
+  color: white;
+  border-color: #007bff;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+/* --- Khu vực nội dung bài tập --- */
+.content-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* Chiếm hết phần không gian còn lại */
+  padding-bottom: 50px;
+}
+
+/* Style chữ tạm thời cho các bài chưa làm */
+.placeholder-text {
+  color: #888;
+  margin-top: 50px;
+  font-weight: normal;
+}

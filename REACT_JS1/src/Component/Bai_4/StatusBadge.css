@@ -1,0 +1,25 @@
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px; /* Bo tròn hình viên thuốc */
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.badge-online {
+  background-color: #2ecc71; /* Xanh lá */
+}
+
+.badge-offline {
+  background-color: #95a5a6; /* Xám */
+}
+
+.badge-busy {
+  background-color: #e74c3c; /* Đỏ */
+}

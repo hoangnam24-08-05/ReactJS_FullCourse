@@ -1,0 +1,37 @@
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px; /* Bo góc */
+  color: white; /* Chữ màu trắng */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt */
+  outline: none;
+}
+
+
+/* 1. Primary (Màu xanh dương) */
+.btn-primary {
+  background-color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #0056b3; /* Đậm hơn khi hover */
+}
+
+/* 2. Danger (Màu đỏ) */
+.btn-danger {
+  background-color: #dc3545;
+}
+.btn-danger:hover {
+  background-color: #a71d2a;
+}
+
+/* 3. Success (Màu xanh lá) */
+.btn-success {
+  background-color: #28a745;
+}
+.btn-success:hover {
+  background-color: #1e7e34;
+}
