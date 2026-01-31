@@ -1,0 +1,36 @@
+.stopwatch-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.time-display {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: monospace;
+  color: #333;
+  margin: 20px 0;
+}
+
+.control-btns button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.lap-area {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.lap-list {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}

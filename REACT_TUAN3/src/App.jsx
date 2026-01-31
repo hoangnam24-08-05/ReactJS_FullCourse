@@ -4,9 +4,10 @@ import "./App.css";
 // Import các bài tập
 import Bai1 from "./BaiTap_Buoi3/bai1";
 import Bai2 from "./BaiTap_Buoi3/bai2";
-// import Bai3 from "./BaiTap_Buoi3/bai3";
-// import Bai4 from "./BaiTap_Buoi3/bai4";
-// import Bai5 from "./BaiTap_Buoi3/bai5";
+import Bai3 from "./BaiTap_Buoi3/bai3";
+import Bai4 from "./BaiTap_Buoi3/bai4";
+import Bai5 from "./BaiTap_Buoi3/bai5";
+import Bai6 from "./BaiTap_Buoi3/bai6";
 
 function App() {
   const [currentBai, setCurrentBai] = useState(1);
@@ -24,6 +25,10 @@ function App() {
         return <Bai4 />;
       case 5:
         return <Bai5 />;
+      case 6:
+        return <Bai6 />;
+      case 7:
+        return <Bai7 />;
       default:
         return <Bai1 />;
     }
@@ -62,6 +67,18 @@ function App() {
           onClick={() => setCurrentBai(5)}
         >
           Bài 5
+        </button>
+        <button
+          className={currentBai === 6 ? "tab-btn active" : "tab-btn"}
+          onClick={() => setCurrentBai(6)}
+        >
+          Bài 6
+        </button>
+        <button
+          className={currentBai === 7 ? "tab-btn active" : "tab-btn"}
+          onClick={() => setCurrentBai(7)}
+        >
+          Bài 7
         </button>
       </div>
 
