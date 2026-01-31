@@ -8,6 +8,7 @@ import Bai3 from "./BaiTap_Buoi3/bai3";
 import Bai4 from "./BaiTap_Buoi3/bai4";
 import Bai5 from "./BaiTap_Buoi3/bai5";
 import Bai6 from "./BaiTap_Buoi3/bai6";
+import Bai7 from "./BaiTap_Buoi3/bai7";
 
 function App() {
   const [currentBai, setCurrentBai] = useState(1);
